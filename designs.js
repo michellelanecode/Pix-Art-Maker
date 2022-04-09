@@ -3,11 +3,19 @@
 var color = document.getElementById('colorPicker').value;
 const form = document.getElementById('sizePicker');
 const canvas = document.getElementById('pixelCanvas')
+const width = document.getElementById('inputWidth').value;
+const height = document.getElementById('inputHeight').value;
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
-    const width = document.getElementById('inputWidth').value;
-    const height = document.getElementById('inputHeight').value;
+    makeGrid(width, height)
+})
+
+form.addEventListener('reset', function(event) {
+    event.preventDefault()
+    document.querySelectorAll('tr').forEach((ele) => {
+        ele.remove();
+    })
     makeGrid(width, height)
 })
 
@@ -33,6 +41,5 @@ function makeGrid(width, height) {
     cells.forEach((cell) => {
         cell.addEventListener('click', changeColor)
     })
-    changeColor();
 }
 makeGrid(20, 20)
