@@ -1,16 +1,8 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+This is project I've created for the Udacity Front End Web Developer Nanodegree Program.
+This project was created from a starter code repo that contained the basic HTML. The background and music added are my own and I've written all the JS for this project.
+This project was created using HTML||CSS||JS
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
-
-## Instructions
-
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+Here is a live link to the project [project](https://michellelanecode.github.io/Pix-Art-Maker/);
+Enjoy!
