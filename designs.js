@@ -1,16 +1,19 @@
 var color = document.getElementById('colorPicker').value;
 const form = document.getElementById('sizePicker');
 const canvas = document.getElementById('pixelCanvas')
-const width = document.getElementById('inputWidth').value;
-const height = document.getElementById('inputHeight').value;
+const inputWidth = document.getElementById('inputWidth')
+const inputHeight = document.getElementById('inputHeight')
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     document.querySelectorAll('tr').forEach((ele) => {
         ele.remove();
     })
+    let height = inputHeight.value;
+    let width = inputWidth.value;
     makeGrid(width, height)
 })
+
 
 
 function changeColor() {
@@ -34,4 +37,3 @@ function makeGrid(width, height) {
         cell.addEventListener('click', changeColor)
     })
 }
-makeGrid(20, 20)
