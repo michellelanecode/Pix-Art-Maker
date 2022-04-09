@@ -8,16 +8,12 @@ const height = document.getElementById('inputHeight').value;
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
-    makeGrid(width, height)
-})
-
-form.addEventListener('reset', function(event) {
-    event.preventDefault()
     document.querySelectorAll('tr').forEach((ele) => {
         ele.remove();
     })
     makeGrid(width, height)
 })
+
 
 function changeColor() {
     color = document.getElementById('colorPicker').value;
