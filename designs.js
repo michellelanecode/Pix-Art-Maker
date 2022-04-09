@@ -15,7 +15,6 @@ form.addEventListener('submit', function(event) {
 })
 
 
-
 function changeColor() {
     color = document.getElementById('colorPicker').value;
     this.style.background = color;
